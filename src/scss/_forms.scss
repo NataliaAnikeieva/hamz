@@ -1,3 +1,13 @@
-.header-btn {
-    margin-left: 37px;
+.btn {
+    margin-left: 40px;
+    background-color: $bgc3;
+    color: $color2;
+    border-radius: 20px;
+    padding: 12px 40px;
+    @include transition(color background);
+    &:hover {
+       background-color: $bgc4;
+       text-decoration: none;
+       border: none;
+}
 }

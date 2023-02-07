@@ -3,9 +3,13 @@
 
 
 [class*="container"] {
-    max-width: 1600px;
+    max-width: 1170px;
     margin: 0 auto; 
-    padding: 0 15px; 
+    padding: 0 15px;
+}
+
+.header__container {
+    padding: 20px 0;
 }
 
 .logo:hover {
@@ -14,4 +18,36 @@
 
 .nav-link {
     color: $color3;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0.32px;
+    &:hover {
+        color: $color4;
+    }
+}
+
+.navbar-expand-lg .navbar-nav {
+    gap: 25px;
+}
+
+// =====welcome
+
+.welcome__section {
+    padding-top: 135px;
+    position: relative;
+}
+
+.welcome-img {
+    width: 100%;
+}
+
+.welcome-content {
+    position: absolute;
+    top: 110px;
+}
+
+.welcome-text {
+    color: $color7;
+    max-width: 500px;
+    margin: 30px 0;
 }
