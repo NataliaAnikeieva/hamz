@@ -14,7 +14,7 @@ h6 {
 }
 
 h1 {
-    font-size: $fs-xxlg;
+    @include font($fs-xxlg,$fs-xlg)
     }
 
 h3 {
