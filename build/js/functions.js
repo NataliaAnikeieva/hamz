@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 function initImgReplace() {
 	'use strict;';
-	$('.section.welcome').each(function () {
+	$('.section.welcome, .footer').each(function () {
 		let imgHolder = $(this),
 			img = imgHolder.find('img'),
 			imgSrc = img.attr('src');
@@ -14,7 +14,6 @@ function initImgReplace() {
 				backgroundSize: 'cover',
 				backgroundPosition: '50% 50%',
 				backgroundRepeat: 'no-repeat',
-				height: '100vh',
 			});
 			img.remove();
 		}

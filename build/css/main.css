@@ -3,19 +3,69 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular&display=swap);
 body {
-    font: 400 16px "Overpass";
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
+    font-family: "Overpass";
+    font-weight: normal;
+    color: #6e7891;
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
     font-family: "Ubuntu";
+    color: #1a0e4b;
 }
 
 h1 {
     font-size: calc(45px + 35 * ((100vw - 320px) / 850));
+}
+
+h2 {
+    font-size: calc(23px + 22 * ((100vw - 320px) / 850));
+}
+
+h3 {
+    font-size: 23px;
+}
+h3:hover {
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
+    color: #6e7891;
+    line-height: 1.9;
+    font-weight: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 [class*=__container] {
@@ -64,6 +114,81 @@ h1 {
     color: #373e39;
     max-width: 500px;
     margin: 30px 0;
+}
+
+.feature-title {
+    margin: 130px 0 30px 0;
+}
+
+.feature-text {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.col-lg-6 {
+    width: 47%;
+}
+
+.card {
+    background-color: #f6f8f3;
+    -webkit-transition: color 0.5s ease 0s , background 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s , background 0.5s ease 0s;
+    transition: color 0.5s ease 0s , background 0.5s ease 0s;
+}
+.card:hover {
+    background-color: #668b16;
+}
+
+.feature-card {
+    margin-left: 30px;
+}
+
+.card-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card-title {
+    color: #1a0e4b;
+}
+
+.footer-list {
+    margin-top: 65px;
+}
+
+.space-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-link,
+.footer-text {
+    font-size: 15px;
+    font-family: "Poppins";
+    line-height: 2.7;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 2.9;
+    border-top: 1px solid #82a33b;
+    margin: 80px 0 10px 0;
+    padding-top: 20px;
 }
 
 /*NORMALIZE.CSS*/
@@ -611,18 +736,47 @@ ul {
 }
 
 body {
-    font: 400 16px "Overpass";
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
+    font-family: "Overpass";
+    font-weight: normal;
+    color: #6e7891;
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
     font-family: "Ubuntu";
+    color: #1a0e4b;
 }
 
 h1 {
     font-size: calc(45px + 35 * ((100vw - 320px) / 850));
+}
+
+h2 {
+    font-size: calc(23px + 22 * ((100vw - 320px) / 850));
+}
+
+h3 {
+    font-size: 23px;
+}
+h3:hover {
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
+    color: #6e7891;
+    line-height: 1.9;
+    font-weight: normal;
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -1,28 +1,42 @@
 @import "../scss/_variables";
 
 body {
-    font: 400 $fs-md $main-font; 
+    @include font($fs-md,$fs-sm);
+    font-family: $main-font;
+    font-weight: normal;
+    color: $color1;
     
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
     font-family: $secondary-font;
+    color: $color3;
 }
 
 h1 {
     @include font($fs-xxlg,$fs-xlg)
     }
 
+h2 {
+    @include font($fs-xlg,$fs-lg)
+}
+
 h3 {
-    
+    font-size: $fs-lg;
+    &:hover {
+        color: $color2;
+    }
 }
 
 h4{
-   
+    font-size: #{$fs-lg+2};
+    font-weight: bold;
+    color: $color2;
 }
 
 h5 {
@@ -38,5 +52,8 @@ a {
     }
 
 p {
-   
+    @include font($fs-md,$fs-sm);
+    color: $color1;
+    line-height: 1.9;
+    font-weight: normal;
 }

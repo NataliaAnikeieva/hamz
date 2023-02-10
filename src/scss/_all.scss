@@ -1,13 +1,26 @@
 @import "../scss/_mixins";
 @import "../scss/typography";
 
+html,body {
+    height: 100%; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 1 auto;
+}
 
 [class*="__container"] {
     max-width: 1170px;
     margin: 0 auto; 
     padding: 0 15px;
 }
-
+// =====header
 .header__container {
     padding: 20px 15px;
 }
@@ -45,9 +58,76 @@
     position: absolute;
     top: 110px;
 }
-
 .welcome-text {
     color: $color7;
     max-width: 500px;
     margin: 30px 0;
+}
+// ====features
+.feature-title {
+    margin: 130px 0 30px 0;
+}
+
+.feature-text {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+.col-lg-6 {
+    width: 47%;
+}
+
+.card {
+    background-color: $bgc5;
+    @include transition(color background);
+    &:hover {
+        background-color: $bgc3;
+    }
+}
+.feature-card {
+    margin-left: 30px;
+}
+.card-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+.card-title {
+    color: $color3;
+}
+// ====footer
+
+.footer-list{
+     margin-top: 65px;
+ }
+.space-between{
+    justify-content: space-between;
+}
+
+.footer-link,
+.footer-text {
+    font-size: #{$fs-sm+2};
+    font-family: $third-font;
+    line-height: 2.7;
+    font-weight: normal;
+    color: $color2;
+   
+ }
+
+.footer-link:hover {
+    text-decoration: underline;
+ }
+
+.footer-text {
+     font-family: $third-font;
+     font-weight: 400;
+ }
+
+.copyright {
+    font-size: #{$fs-sm+1};
+    color: $color2;
+    font-weight: 2.9;
+    border-top: 1px solid $color8;
+    margin: 80px 0 10px 0;
+    padding-top: 20px;
 }
