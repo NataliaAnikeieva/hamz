@@ -4,17 +4,14 @@
 html,body {
     height: 100%; 
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-
 main {
     flex: 1 1 auto;
 }
-
 [class*="__container"] {
     max-width: 1170px;
     margin: 0 auto; 
@@ -24,105 +21,219 @@ main {
 .header__container {
     padding: 20px 15px;
 }
-
 .logo:hover {
     opacity: .7;
 }
-
 .nav-link {
     color: $color3;
     font-weight: 600;
-    line-height: 1.75;
-    letter-spacing: 0.32px;
+    line-height: 1.7;
+    letter-spacing: .3px;
     &:hover {
         color: $color4;
     }
 }
-
 .navbar-expand-lg .navbar-nav {
     gap: 25px;
 }
-
 // =====welcome
-
 .welcome {
-    position: relative;
-    height: 860px;
+    height: 100hv;
+    min-height: 1060px;
+    padding-top: 190px;
 }
-
 .welcome-img {
     width: 100%;
-}
-
-.welcome-content {
-    position: absolute;
-    top: 110px;
 }
 .welcome-text {
     color: $color7;
     max-width: 500px;
     margin: 30px 0;
 }
-// ====features
-.feature-title {
-    margin: 130px 0 30px 0;
+// ====feature
+.main-content {
+    flex-direction: column;
 }
-
-.feature-text {
+.content-text {
     max-width: 520px;
     margin: 0 auto;
     margin-bottom: 75px;
 }
-.col-lg-6 {
-    width: 47%;
+.features {
+    padding-top: 130px;
 }
-
-.card {
+.feature-card {
     background-color: $bgc5;
     @include transition(color background);
     &:hover {
         background-color: $bgc3;
     }
 }
+.feature-cols {
+    margin-left: -40px;
+}
 .feature-card {
-    margin-left: 30px;
+    width: 570px;
+    padding: 20px 25px;
+    margin-left: 20px;
+}
+.card-body-features {
+    padding-left: 35px;
 }
 .card-img {
     width: 100%;
     text-align: center;
-    margin-top: 35px;
 }
 .card-title {
+    color: $color3; 
+} 
+.card-text {
+    line-height: 1.7;
+}
+// ====members
+.members {
+    padding-top: 230px;
+}
+.members-content {
+    position: relative;
+}
+.members-text {
+    max-width: 520px;
+    margin: 0 auto;
+}
+.card-member {
+    margin-top: 165px;
+}
+.members-img {
+    border-radius: 50%;
+    border: 5px dashed #fff;
+    position: absolute;
+    z-index: 99;
+    top: 200px;
+}
+.members-card {
+    width: 240px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: $bgc3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    margin-left: 10px;
+    @include transition(background);
+    &:hover {
+        background-color: $bgc4;
+
+    }
+}
+.members-work {
+    padding: 15px 0 45px 0;
+    color: $color2;
+}
+// ====products
+.products {
+    padding-top: 115px;
+}
+.products-item {
+    padding: 30px 52px 30px 30px;
+    margin-bottom: 15px;
+    &:last-child{
+        margin-bottom: 0;
+    }
     color: $color3;
+    border-radius: 8px;
+    box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
+    border: solid 1px $color9;
+    @include transition(background);
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 3px solid $color1;
+        margin-right: 20px;
+    }
+    &:hover {
+        background-color: $bgc3;
+    }
+}
+.product-card {
+    position: relative;
+    padding: 30px 30px 29px;
+    border-radius: 4px;
+    box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
+    background-color: #fff;
+}
+.product-img {
+    padding-bottom: 60px;
+    border-bottom: 3px solid #e5f0d2;
+    margin-bottom: 35px;
+}
+.brand-product {
+    position: absolute;
+    top: 240px;
+    left: 20%;
+    background-color: #e5f0d2;
+    padding: 5px 20px;
+    border-radius: 12px;
+}
+.card-price {
+    color: $color5;
+}
+// ====events
+.events {
+    background-color: $bgc3;
+    margin-top: 120px;
+}
+
+.events__container {
+    padding-top: 90px ;
+}
+.events-card {
+    width: 570px;
+}
+.card-img {
+    width: 180px;
+}
+.data-text {
+    font-size: #{$fs-sm+2};
+    color: $color3;
+    font-weight: 700;
+}
+.speaker-name {
+    margin-left: 25px;
+}
+.name {
+    color: $color3;
+    font-weight: 700;
+}
+.job {
+    font-size: $fs-sm;
 }
 // ====footer
-
 .footer-list{
      margin-top: 65px;
  }
 .space-between{
     justify-content: space-between;
 }
-
 .footer-link,
 .footer-text {
     font-size: #{$fs-sm+2};
     font-family: $third-font;
     line-height: 2.7;
     font-weight: normal;
-    color: $color2;
-   
+    color: $color2; 
  }
-
 .footer-link:hover {
     text-decoration: underline;
  }
-
 .footer-text {
      font-family: $third-font;
      font-weight: 400;
  }
-
 .copyright {
     font-size: #{$fs-sm+1};
     color: $color2;

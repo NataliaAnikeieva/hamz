@@ -13,6 +13,7 @@
     <link href="favicon.ico" rel="shortcut icon">
     <!-- CSS LINKS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" media="screen">
     <link href="css/widgets.css" rel="stylesheet" media="screen">
     <link href="css/main.css" rel="stylesheet" media="screen">
     <title>hamz</title>
@@ -46,7 +47,7 @@
                   <h1 class="welcome-title">Unlimited golf<br>experience</h1>
                   <p class="welcome-text">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillumdolore eu fugiat nulla pariatur.</p>
-                  <button class="btn welcome-btn">View Products</button>
+                  <button class="btn welcome-btn">View Products<span class="arrow fa-solid fa-arrow-right"> </span></button>
                 </div>
               </div>
             </div>
@@ -55,20 +56,20 @@
         <section class="features">
           <div class="feature__container"> 
             <div class="row"> 
-              <div class="col-12"> 
-                <h2 class="feature-title text-center">Features of Hamz</h2>
-                <p class="feature-text text-center">
+              <div class="col-12 main-content d-flex text-center">
+                <h2 class="content-title text-center">Features of Hamz</h2>
+                <p class="content-text">
                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreessel golden fugiat nulla pariatur.</p>
               </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="card mb-3 col-lg-6 col-sm-12">
+            <div class="row row-cols-1 row-cols-md-2 g-4 feature-cols">
+              <div class="card feature-card mb-3 col-lg-6 col-sm-12">
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-md-12">
                     <div class="card-img"><img src="img/golf.png" alt=""></div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="card-body">
+                  <div class="col-lg-9 col-md-12">
+                    <div class="card-body-features">
                       <h3 class="card-title mt-3 mb-3">Stick Holder</h3>
                       <p class="card-text">
                         Ut enim adminim veniam nostrud exercitationullamco aboris nisi utten aliquip ex commodo
@@ -80,11 +81,11 @@
               </div>
               <div class="card feature-card mb-3 col-lg-6 col-sm-12">
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-md-12">
                     <div class="card-img"><img src="img/cup.png" alt=""></div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="card-body">
+                  <div class="col-lg-9 col-md-12">
+                    <div class="card-body-features">
                       <h3 class="card-title mt-3 mb-3">Gold Tropy</h3>
                       <p class="card-text">
                         Ut enim adminim veniam nostrud exercitationullamco aboris nisi utten aliquip ex commodo
@@ -94,13 +95,13 @@
                   </div>
                 </div>
               </div>
-              <div class="card mb-3 col-lg-6 col-sm-12">
+              <div class="card feature-card mb-3 col-lg-6 col-sm-12">
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-md-12">
                     <div class="card-img"><img src="img/golf-stik.png" alt=""></div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="card-body">
+                  <div class="col-lg-9 col-md-12">
+                    <div class="card-body-features">
                       <h3 class="card-title mt-3 mb-3">Golf Stick</h3>
                       <p class="card-text">
                         Ut enim adminim veniam nostrud exercitationullamco aboris nisi utten aliquip ex commodo
@@ -110,14 +111,14 @@
                   </div>
                 </div>
               </div>
-              <div class="card feature-card mb-3 mcol-lg-6 col-sm-12">
+              <div class="card feature-card mb-3 col-lg-6 col-sm-12">
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="card-img"><img src="img/ball.png" alt=""></div>
+                  <div class="col-lg-3 col-md-12">
+                    <div class="card-img"><img src="img/golf-stik.png" alt=""></div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="card-body">
-                      <h3 class="card-title mt-3 mb-3">Ball and Tee</h3>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="card-body-features">
+                      <h3 class="card-title mt-3 mb-3">Golf Stick</h3>
                       <p class="card-text">
                         Ut enim adminim veniam nostrud exercitationullamco aboris nisi utten aliquip ex commodo
                         consequat aute irur.
@@ -133,72 +134,257 @@
           <div class="members__container">
             <div class="members-content"> 
               <div class="row"> 
-                <div class="col-lg-12">
-                  <h1 class="members-title text-center">Unlimited golf</h1>
-                  <p class="members-text">
+                <div class="col-12 main-content d-flex text-center">
+                  <h2 class="content-title text-center">Our feature member's</h2>
+                  <p class="content-text">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreessel golden fugiat nulla pariatur.</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer"><img class="img-fluid" src="img/footer-bg.jpg" alt="">
-        <div class="footer__container">
-          <div class="footer-content"> 
-            <div class="footer-top"> 
               <div class="row"> 
-                <div class="col-12 md-6 sm-3 d-flex">
-                  <h4 class="footer-title">Help
-                    <ul class="footer-list"> 
-                      <li class="footer-items"> <a class="footer-link" href="#">Search</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Help</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Information</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Privacy Policy</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Sipping Detales </a></li>
-                    </ul>
-                  </h4>
-                  <h4 class="footer-title">Support
-                    <ul class="footer-list"> 
-                      <li class="footer-items"> <a class="footer-link" href="#">Contact Us</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">About Us</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Careers</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Refunds & Returns</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Deliveries</a></li>
-                    </ul>
-                  </h4>
-                  <h4 class="footer-title">Support
-                    <ul class="footer-list"> 
-                      <li class="footer-items"> 
-                        <p class="footer-text">No: 58 A, East Madison<br>Baltimore, MD, USA 4508</p>
-                      </li>
-                      <li class="footer-items"> <a class="footer-link" href="tel: +99 8123 458 678">+99 8123 458 678</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="email: support@gmail.com">support@gmail.com</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="www.hmzgolf.com">www.hmzgolf.com</a></li>
-                    </ul>
-                  </h4>
-                  <h4 class="footer-title">Information
-                    <ul class="footer-list"> 
-                      <li class="footer-items"> <a class="footer-link" href="#">Press Centre</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">About us</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Terms & Condition</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Privacy Policy</a></li>
-                      <li class="footer-items"> <a class="footer-link" href="#">Contact Us</a></li>
-                    </ul>
-                  </h4>
+                <div class="col-lg-3 col-md-6 card-member">
+                  <div class="members-img"> <img src="img/natalie.png" alt=""></div>
+                  <div class="members-card">
+                    <h4 class="members-subtitle">Natalie Watkins</h4>
+                    <p class="members-work">Professinal Trainer</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="footer-bottom"> 
-              <div class="row">
-                <div class="col-12 text-center">
-                  <p class="copyright">Copyright  2019; All Rights Reserved.</p>
+                <div class="col-lg-3 col-md-6 card-member">
+                  <div class="members-img"> <img src="img/marlon.png" alt=""></div>
+                  <div class="members-card">
+                    <h4 class="members-subtitle">Natalie Watkins</h4>
+                    <p class="members-work">Professinal Trainer</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 card-member">
+                  <div class="members-img"> <img src="img/walles.png" alt=""></div>
+                  <div class="members-card">
+                    <h4 class="members-subtitle">Natalie Watkins</h4>
+                    <p class="members-work">Professinal Trainer</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 card-member">
+                  <div class="members-img"> <img src="img/hadson.png" alt=""></div>
+                  <div class="members-card">
+                    <h4 class="members-subtitle">Natalie Watkins</h4>
+                    <p class="members-work">Professinal Trainer</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+        <div class="section products">
+          <div class="products__container"> 
+            <div class="row"> 
+              <div class="col-12 main-content d-flex text-center"> 
+                <h2 class="content-title text-center">Speacial Golf Products</h2>
+                <p class="content-text">
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreessel golden fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-lg-12 col-md-6"> 
+                <div class="products-content d-flex"> 
+                  <div class="col-3">
+                    <ul class="products-list"> 
+                      <li class="products-item"> <a class="product-link" href="#">Featured Products</a></li>
+                      <li class="products-item"> <a class="product-link" href="#">New Products</a></li>
+                      <li class="products-item"> <a class="product-link" href="#">Best Saller</a></li>
+                      <li class="products-item"> <a class="product-link" href="#">Branding Iteam</a></li>
+                      <li class="products-item"> <a class="product-link" href="#">Boys Iteams</a></li>
+                    </ul>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-3 g-4 ms-3">
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/glasses.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/hat.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/polo.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/car.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/stik-golf.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card product-card"><img class="card-img-top product-img" src="img/pocket.png" alt="">
+                        <div class="card-body">
+                          <p class="brand-product">Brand: Addidas</p>
+                          <h5 class="card-title text-center">Boys Golf Glass</h5>
+                          <p class="card-price text-center">Price: $568</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="events">
+          <div class="events__container"> 
+            <div class="row"> 
+              <div class="col-12 main-content d-flex text-center">
+                <h2 class="content-title text-center text-white">Upcomming Events</h2>
+                <p class="content-text text-white">
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreessel golden fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="card events-card mb-3 col-lg-6 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card-img"><img src="img/dubai.jpg" alt=""></div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="card-body">
+                      <div class="data-card d-flex">     
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">25.09.2019</p>
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">9.00 AM To 12.00 PM</p>
+                      </div>
+                      <h3 class="card-title mt-3 mb-3">International Conference<br>in Dubai</h3>
+                      <div class="place d-flex">
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p>Dubai (United Arab Emirates)</p>
+                      </div>
+                      <div class="speaker d-flex"> 
+                        <div class="speaker-img"> <img src="img/men.png" alt=""></div>
+                        <div class="speaker-name"> 
+                          <div class="name">Marlon Marshall</div>
+                          <div class="job">Speaker</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card events-card mb-3 ms-3 col-lg-6 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card-img"><img src="img/dubai.jpg" alt=""></div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="card-body">
+                      <div class="data-card d-flex">     
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">25.09.2019</p>
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">9.00 AM To 12.00 PM</p>
+                      </div>
+                      <h3 class="card-title mt-3 mb-3">International Conference<br>in Dubai</h3>
+                      <div class="place d-flex">
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p>Dubai (United Arab Emirates)</p>
+                      </div>
+                      <div class="speaker d-flex"> 
+                        <div class="speaker-img"> <img src="img/men.png" alt=""></div>
+                        <div class="speaker-name"> 
+                          <div class="name">Marlon Marshall</div>
+                          <div class="job">Speaker</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card events-card mb-3 col-lg-6 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card-img"><img src="img/dubai.jpg" alt=""></div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="card-body">
+                      <div class="data-card d-flex">     
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">25.09.2019</p>
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">9.00 AM To 12.00 PM</p>
+                      </div>
+                      <h3 class="card-title mt-3 mb-3">International Conference<br>in Dubai</h3>
+                      <div class="place d-flex">
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p>Dubai (United Arab Emirates)</p>
+                      </div>
+                      <div class="speaker d-flex"> 
+                        <div class="speaker-img"> <img src="img/men.png" alt=""></div>
+                        <div class="speaker-name"> 
+                          <div class="name">Marlon Marshall</div>
+                          <div class="job">Speaker </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card events-card mb-3 ms-3 col-lg-6 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card-img"><img src="img/dubai.jpg" alt=""></div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="card-body">
+                      <div class="data-card d-flex">     
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">25.09.2019</p>
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p class="data-text">9.00 AM To 12.00 PM</p>
+                      </div>
+                      <h3 class="card-title mt-3 mb-3">International Conference<br>in Dubai</h3>
+                      <div class="place d-flex">
+                        <div class="data__img"><span class="fa-light fa-clock"></span></div>
+                        <p>Dubai (United Arab Emirates)</p>
+                      </div>
+                      <div class="speaker d-flex"> 
+                        <div class="speaker-img"> <img src="img/men.png" alt=""></div>
+                        <div class="speaker-name"> 
+                          <div class="name">Marlon Marshall</div>
+                          <div class="job">Speaker </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <!--SCRIPT LINKS-->
       <!--Jquery-->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
