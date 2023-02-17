@@ -67,6 +67,9 @@ main {
     @include transition(color background);
     &:hover {
         background-color: $bgc3;
+        .card-title {
+            color: #fff;
+        }
     }
 }
 .feature-cols {
@@ -157,6 +160,24 @@ main {
     }
     &:hover {
         background-color: $bgc3;
+    }
+}
+.products-hodler {
+    position: relative;
+    min-height: 710px;
+}
+.products-tab {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    @include transition(visibility opacity);
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
     }
 }
 .product-card {

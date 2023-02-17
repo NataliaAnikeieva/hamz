@@ -142,6 +142,9 @@ main {
 .feature-card:hover {
     background-color: #668b16;
 }
+.feature-card:hover .card-title {
+    color: #fff;
+}
 
 .feature-cols {
     margin-left: -40px;
@@ -255,6 +258,28 @@ main {
 }
 .products-item:hover {
     background-color: #668b16;
+}
+
+.products-hodler {
+    position: relative;
+    min-height: 710px;
+}
+
+.products-tab {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: visibility 0.5s ease 0s , opacity 0.5s ease 0s;
+    -o-transition: visibility 0.5s ease 0s , opacity 0.5s ease 0s;
+    transition: visibility 0.5s ease 0s , opacity 0.5s ease 0s;
+}
+.products-tab.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
 }
 
 .product-card {
