@@ -4,6 +4,9 @@
 html,body {
     height: 100%; 
 }
+body {
+    -webkit-font-smoothing: antialiased;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,9 @@ main {
 // =====header
 .header__container {
     padding: 20px 15px;
+}
+.header-transform {
+    background-color: $bgc8;
 }
 .logo:hover {
     opacity: .7;
@@ -38,17 +44,21 @@ main {
 }
 // =====welcome
 .welcome {
-    height: 100hv;
+    height: 100vh;
     min-height: 1060px;
-    padding-top: 190px;
-}
-.welcome-img {
-    width: 100%;
-}
-.welcome-text {
-    color: $color7;
-    max-width: 500px;
-    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    &_container {
+        width: 100%;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-text {
+        color: $color7;
+        max-width: 500px;
+        margin: 30px 0;
+    }
 }
 // ====feature
 .main-content {
@@ -62,16 +72,6 @@ main {
 .features {
     padding-top: 130px;
 }
-.feature-card {
-    background-color: $bgc5;
-    @include transition(color background);
-    &:hover {
-        background-color: $bgc3;
-        .card-title {
-            color: #fff;
-        }
-    }
-}
 .feature-cols {
     margin-left: -40px;
 }
@@ -79,40 +79,56 @@ main {
     width: 570px;
     padding: 20px 25px;
     margin-left: 20px;
+    background-color: $bgc5;
+    @include transition(color background);
+    &:hover {
+        background-color: $bgc3;
+        .card-title {
+            color: $color2;
+        }
+        .card-text {
+            color: $color2;
+        }
+    }
 }
-.card-body-features {
-    padding-left: 35px;
-}
-.card-img {
-    width: 100%;
-    text-align: center;
-}
-.card-title {
-    color: $color3; 
-} 
-.card-text {
-    line-height: 1.7;
-}
+.card {
+    &-body-features { 
+        padding-left: 35px;
+    }
+    &-img {  
+        text-align: center;
+        width: 100%;
+    }
+    &-title {
+        color: $color3; 
+    }
+    &-text {
+        line-height: 1.7;
+    }
+    }
 // ====members
 .members {
-    padding-top: 230px;
-}
-.members-content {
-    position: relative;
-}
-.members-text {
-    max-width: 520px;
-    margin: 0 auto;
+    margin-top: 230px;
+    padding-top: 50px;
+    background-image: url("../img/members-bg.png");
+    background-repeat-x: repeat;
+    &-text {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    &-img {
+        position: relative;
+        border-radius: 50%;
+        border: 5px dashed $color2;
+    }
+    &-work {
+        padding: 15px 0 45px 0;
+        color: $color2;
+    }
 }
 .card-member {
-    margin-top: 165px;
-}
-.members-img {
-    border-radius: 50%;
-    border: 5px dashed #fff;
-    position: absolute;
-    z-index: 99;
-    top: 200px;
+    margin-top: 30px;
+    padding-left: 0;
 }
 .members-card {
     width: 240px;
@@ -123,20 +139,32 @@ main {
     flex-direction: column;
     text-align: center;
     justify-content: end;
-    margin-left: 10px;
+    margin: -125px 0 0 10px;
     @include transition(background);
     &:hover {
         background-color: $bgc4;
 
     }
 }
-.members-work {
-    padding: 15px 0 45px 0;
-    color: $color2;
-}
 // ====products
 .products {
     padding-top: 115px;
+    &-holder {
+        position: relative;
+        min-height: 710px;
+    }
+    &-card {
+        position: relative;
+        padding: 30px 30px 29px;
+        border-radius: 4px;
+        box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
+        background-color: $color2;
+    }
+    &-img {
+        padding-bottom: 60px;
+        border-bottom: 3px solid #e5f0d2;
+        margin-bottom: 35px;
+    }
 }
 .products-item {
     padding: 30px 52px 30px 30px;
@@ -160,11 +188,8 @@ main {
     }
     &:hover {
         background-color: $bgc3;
+        color: $color2
     }
-}
-.products-hodler {
-    position: relative;
-    min-height: 710px;
 }
 .products-tab {
     position: absolute;
@@ -179,18 +204,6 @@ main {
         visibility: visible;
         pointer-events: all;
     }
-}
-.product-card {
-    position: relative;
-    padding: 30px 30px 29px;
-    border-radius: 4px;
-    box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
-    background-color: #fff;
-}
-.product-img {
-    padding-bottom: 60px;
-    border-bottom: 3px solid #e5f0d2;
-    margin-bottom: 35px;
 }
 .brand-product {
     position: absolute;
@@ -207,16 +220,12 @@ main {
 .events {
     background-color: $bgc3;
     margin-top: 120px;
-}
-
-.events__container {
-    padding-top: 90px ;
-}
-.events-card {
-    width: 570px;
-}
-.card-img {
-    width: 180px;
+    &_containet {
+        padding-top: 90px;
+    }
+    &-card {
+        width: 570px;
+    }
 }
 .data-text {
     font-size: #{$fs-sm+2};

@@ -3,11 +3,12 @@
     color: $color2;
     border-radius: 30px;
     padding: 15px 40px;
+    border: none;
     @include transition(color background);
     &:hover {
        background-color: $bgc4;
        text-decoration: none;
-       border: none;
+       color: $color4;
 }
 }
 .header-btn {
