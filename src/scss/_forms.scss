@@ -6,9 +6,9 @@
     border: none;
     @include transition(color background);
     &:hover {
-       background-color: $bgc4;
+       background-color: #ff9600 ;
        text-decoration: none;
-       color: $color4;
+       color: $color2;
 }
 }
 .header-btn {

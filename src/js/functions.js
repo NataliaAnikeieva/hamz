@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	initImgReplace();
 	initHeader();
+	initTabs();
 });
 function initImgReplace() {
 	'use strict;';

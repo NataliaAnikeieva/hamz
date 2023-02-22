@@ -21,11 +21,11 @@ main {
     padding: 0 15px;
 }
 // =====header
+.transform {
+    background-color: $bgc8;
+}
 .header__container {
     padding: 20px 15px;
-}
-.header-transform {
-    background-color: $bgc8;
 }
 .logo:hover {
     opacity: .7;
@@ -45,10 +45,10 @@ main {
 // =====welcome
 .welcome {
     height: 100vh;
-    min-height: 1060px;
+    min-height: 860px;
     display: flex;
     align-items: center;
-    &_container {
+    &__container {
         width: 100%;
     }
     &-img {
@@ -108,10 +108,11 @@ main {
     }
 // ====members
 .members {
-    margin-top: 230px;
+    margin-top: 150px;
     padding-top: 50px;
     background-image: url("../img/members-bg.png");
     background-repeat-x: repeat;
+    background-size: 667px 100%;
     &-text {
         max-width: 520px;
         margin: 0 auto;
@@ -126,6 +127,15 @@ main {
         color: $color2;
     }
 }
+.members-content {
+    padding-top: 120px;
+}
+.members-link {
+    color: $color2;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 .card-member {
     margin-top: 30px;
     padding-left: 0;
@@ -135,27 +145,27 @@ main {
     height: 300px;
     border-radius: 50px;
     background-color: $bgc3;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: end;
+    @include flex(null, column, end, center);
     margin: -125px 0 0 10px;
     @include transition(background);
     &:hover {
         background-color: $bgc4;
-
     }
 }
 // ====products
 .products {
-    padding-top: 115px;
+    &-content {
+        padding-bottom: 350px;
+    }
     &-holder {
         position: relative;
         min-height: 710px;
+        padding-bottom: 200px;
     }
     &-card {
-        position: relative;
-        padding: 30px 30px 29px;
+        width: 260px;
+        padding: 15px;
+        margin-top: 20px;
         border-radius: 4px;
         box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
         background-color: $color2;
@@ -166,9 +176,13 @@ main {
         margin-bottom: 35px;
     }
 }
+.products-link {
+    &:hover {
+        text-decoration: underline;
+}
+}
 .products-item {
     padding: 30px 52px 30px 30px;
-    margin-bottom: 15px;
     &:last-child{
         margin-bottom: 0;
     }
@@ -193,7 +207,7 @@ main {
 }
 .products-tab {
     position: absolute;
-    left: 0;
+    left: 35%;
     right: 0;
     opacity: 0;
     visibility: hidden;
@@ -206,9 +220,6 @@ main {
     }
 }
 .brand-product {
-    position: absolute;
-    top: 240px;
-    left: 20%;
     background-color: #e5f0d2;
     padding: 5px 20px;
     border-radius: 12px;
@@ -219,13 +230,15 @@ main {
 // ====events
 .events {
     background-color: $bgc3;
-    margin-top: 120px;
-    &_containet {
+    &__container {
         padding-top: 90px;
     }
-    &-card {
-        width: 570px;
+    &-img {
+        width: 100%;
     }
+}
+.events-card-body {
+    padding-left: 50px;
 }
 .data-text {
     font-size: #{$fs-sm+2};
@@ -242,7 +255,50 @@ main {
 .job {
     font-size: $fs-sm;
 }
+// ====clubs
+.clubs__container {
+    padding-top: 120px;
+}
+.club-card {
+    padding: 45px 67px;
+    border-radius: 8px;
+    box-shadow: 0 0 22px 0 rgba(0, 33, 118, 0.1);
+}
+.clubs-price {
+    margin-top: 30px;
+    font-size: #{$fs-lg+19};
+    color: $color4;
+    font-weight: 900;
+}
+.club-date {
+    font-size: #{$fs-sm+2};
+    font-weight: normal;
+    line-height: 1.9;
+    color: $color4;
+}
+.clubs-text {
+
+}
+.yellow-text {
+    color: #ffae00;
+}
+// ====blog
+.blog__container {
+    padding-top: 120px;
+}
+.left-card-body {
+    padding-left: 35px;
+}
+.by {
+    color: $color4;
+}
+.blog-right {
+    margin-left: 20px;
+}
 // ====footer
+.footer__container {
+    padding-top: 175px;
+}
 .footer-list{
      margin-top: 65px;
  }

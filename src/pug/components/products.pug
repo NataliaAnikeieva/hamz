@@ -7,104 +7,72 @@
                 p.content-text  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                                             |essel golden fugiat nulla pariatur.
         .row 
-            .col-lg-12.col-md-6 
-                .products-content.d-flex 
-                    .col-3
-                        ul.products-list 
-                            li.products-item 
-                                span Featured Products
-                            li.products-item 
-                                span New Products
-                            li.products-item 
-                                span Best Saller
-                            li.products-item 
-                                span Branding Iteam
-                            li.products-item 
-                                span Boys Iteams.
-                    .products-hodler.col-9.row.row-cols-1.row-cols-md-3.g-4.ms-3
-                        .products-tab.row
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/glasses.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/hat.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/polo.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/car.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/stik-golf.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/pocket.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                        .products-tab.row
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/polo.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/hat.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/polo.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/car.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/stik-golf.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
-                            .col
-                                .card.product-card
-                                    img.card-img-top.product-img(src='img/pocket.png', alt='')
-                                    .card-body
-                                        p.brand-product Brand: Addidas
-                                        h5.card-title.text-center Boys Golf Glass
-                                        p.card-price.text-center Price: $568
+            .products-content.d-flex 
+                .col-3
+                    ul.products-list 
+                        li.products-item 
+                            span Featured Products
+                        li.products-item 
+                            span New Products
+                        li.products-item 
+                            span Best Saller
+                        li.products-item 
+                            span Branding Iteam
+                        li.products-item 
+                            span Boys Iteams.
+                .products-hodler.col-9.row.row-cols-2
+                    .products-tab.row
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/glasses.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/hat.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/polo.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/car.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/stik-golf.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568
+                        .col-lg-4.col-md-6.col-sm-12
+                            .card.products-card
+                                img.card-img-top.product-img(src='img/pocket.png', alt='')
+                                .card-body
+                                    h5.card-title.text-center 
+                                        a.products-link(href="#") Boys Golf Glass
+                                    p.brand-product.text-center 
+                                        a.products-link(href="#")  Brand: Addidas    
+                                    p.card-price.text-center Price: $568

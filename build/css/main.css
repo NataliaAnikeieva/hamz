@@ -25,10 +25,12 @@ h1 {
 
 h2 {
     font-size: calc(23px + 22 * ((100vw - 320px) / 850));
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h3 {
-    font-size: 23px;
+    font-size: calc(23px + 0 * ((100vw - 320px) / 850));
 }
 
 h4 {
@@ -43,6 +45,7 @@ h5 {
 
 h6 {
     font-size: 20px;
+    font-weight: 800;
 }
 
 a {
@@ -87,12 +90,12 @@ main {
     padding: 0 15px;
 }
 
-.header__container {
-    padding: 20px 15px;
+.transform {
+    background-color: #78E8DF;
 }
 
-.header-transform {
-    background-color: #78E8DF;
+.header__container {
+    padding: 20px 15px;
 }
 
 .logo:hover {
@@ -115,7 +118,7 @@ main {
 
 .welcome {
     height: 100vh;
-    min-height: 1060px;
+    min-height: 860px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,7 +126,7 @@ main {
         -ms-flex-align: center;
             align-items: center;
 }
-.welcome_container {
+.welcome__container {
     width: 100%;
 }
 .welcome-img {
@@ -190,10 +193,11 @@ main {
 }
 
 .members {
-    margin-top: 230px;
+    margin-top: 150px;
     padding-top: 50px;
     background-image: url("../img/members-bg.png");
     background-repeat-x: repeat;
+    background-size: 667px 100%;
 }
 .members-text {
     max-width: 520px;
@@ -207,6 +211,17 @@ main {
 .members-work {
     padding: 15px 0 45px 0;
     color: #ffffff;
+}
+
+.members-content {
+    padding-top: 120px;
+}
+
+.members-link {
+    color: #ffffff;
+}
+.members-link:hover {
+    text-decoration: underline;
 }
 
 .card-member {
@@ -226,10 +241,12 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: -125px 0 0 10px;
     -webkit-transition: background 0.5s ease 0s;
     -o-transition: background 0.5s ease 0s;
@@ -240,15 +257,19 @@ main {
 }
 
 .products {
-    padding-top: 115px;
+    padding: 115px 0 200px 0;
+}
+.products-content {
+    padding-bottom: 350px;
 }
 .products-holder {
     position: relative;
     min-height: 710px;
+    padding-bottom: 200px;
 }
 .products-card {
-    position: relative;
-    padding: 30px 30px 29px;
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
             box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
@@ -258,6 +279,10 @@ main {
     padding-bottom: 60px;
     border-bottom: 3px solid #e5f0d2;
     margin-bottom: 35px;
+}
+
+.products-link:hover {
+    text-decoration: underline;
 }
 
 .products-item {
@@ -291,7 +316,7 @@ main {
 
 .products-tab {
     position: absolute;
-    left: 0;
+    left: 40%;
     right: 0;
     opacity: 0;
     visibility: hidden;
@@ -307,7 +332,6 @@ main {
 }
 
 .brand-product {
-    position: absolute;
     top: 240px;
     left: 20%;
     background-color: #e5f0d2;
@@ -321,13 +345,16 @@ main {
 
 .events {
     background-color: #668b16;
-    margin-top: 120px;
 }
-.events_containet {
+.events__container {
     padding-top: 90px;
 }
-.events-card {
-    width: 570px;
+.events-img {
+    width: 100%;
+}
+
+.events-card-body {
+    padding-left: 50px;
 }
 
 .data-text {
@@ -347,6 +374,55 @@ main {
 
 .job {
     font-size: 13px;
+}
+
+.clubs__container {
+    padding-top: 120px;
+}
+
+.club-card {
+    padding: 45px 67px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 22px 0 rgba(0, 33, 118, 0.1);
+            box-shadow: 0 0 22px 0 rgba(0, 33, 118, 0.1);
+}
+
+.clubs-price {
+    margin-top: 30px;
+    font-size: 42px;
+    color: #598117;
+    font-weight: 900;
+}
+
+.club-date {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.9;
+    color: #598117;
+}
+
+.yellow-text {
+    color: #ffae00;
+}
+
+.blog__container {
+    padding-top: 120px;
+}
+
+.left-card-body {
+    padding-left: 35px;
+}
+
+.by {
+    color: #598117;
+}
+
+.blog-right {
+    margin-left: 20px;
+}
+
+.footer__container {
+    padding-top: 175px;
 }
 
 .footer-list {
@@ -925,9 +1001,9 @@ ul {
     transition: color 0.5s ease 0s , background 0.5s ease 0s;
 }
 .btn:hover {
-    background-color: #29abe2;
+    background-color: #ff9600;
     text-decoration: none;
-    color: #598117;
+    color: #ffffff;
 }
 
 .header-btn {
@@ -961,10 +1037,12 @@ h1 {
 
 h2 {
     font-size: calc(23px + 22 * ((100vw - 320px) / 850));
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h3 {
-    font-size: 23px;
+    font-size: calc(23px + 0 * ((100vw - 320px) / 850));
 }
 
 h4 {
@@ -979,6 +1057,7 @@ h5 {
 
 h6 {
     font-size: 20px;
+    font-weight: 800;
 }
 
 a {

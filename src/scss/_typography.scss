@@ -16,27 +16,30 @@ h6 {
     color: $color3;
 }
 h1 {
-    @include font($fs-xxlg,$fs-xlg)
+    @include font($fs-xxlg,$fs-xlg);
 }
 h2 {
-    @include font($fs-xlg,$fs-lg)
+    @include font($fs-xlg,$fs-lg);
+    font-weight: bold;
+    line-height: 1.2;
 }
 h3 {
-    font-size: $fs-lg;
+    @include font($fs-lg,$fs-md);
 }
 h4{
-    font-size: #{$fs-lg+2};
+    @include font(#{$fs-lg+2},$fs-md);
     font-weight: bold;
     color: $color2;
 }
 h5 {
-    font-size: $fs-lg;
+    @include font($fs-lg,$fs-md);
 }
 h6 {
-    font-size: #{$fs-md+4}
+    @include font(#{$fs-md+4},$fs-sm);
+    font-weight: 800;
 }
 a {
-    color: $color3
+    color: $color3;
     }
 p {
     @include font($fs-md,$fs-sm);
