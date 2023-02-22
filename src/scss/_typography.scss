@@ -27,7 +27,7 @@ h3 {
     @include font($fs-lg,$fs-md);
 }
 h4{
-    @include font(#{$fs-lg+2},$fs-md);
+    @include font($fs-lg,$fs-md);
     font-weight: bold;
     color: $color2;
 }
@@ -35,7 +35,7 @@ h5 {
     @include font($fs-lg,$fs-md);
 }
 h6 {
-    @include font(#{$fs-md+4},$fs-sm);
+    @include font($fs-md,$fs-sm);
     font-weight: 800;
 }
 a {

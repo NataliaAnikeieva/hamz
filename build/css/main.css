@@ -30,21 +30,21 @@ h2 {
 }
 
 h3 {
-    font-size: calc(23px + 0 * ((100vw - 320px) / 850));
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
 }
 
 h4 {
-    font-size: 25px;
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
     font-weight: bold;
     color: #ffffff;
 }
 
 h5 {
-    font-size: 23px;
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
 }
 
 h6 {
-    font-size: 20px;
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
     font-weight: 800;
 }
 
@@ -256,9 +256,6 @@ main {
     background-color: #29abe2;
 }
 
-.products {
-    padding: 115px 0 200px 0;
-}
 .products-content {
     padding-bottom: 350px;
 }
@@ -269,7 +266,6 @@ main {
 }
 .products-card {
     padding: 15px;
-    margin-top: 20px;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
             box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
@@ -287,7 +283,6 @@ main {
 
 .products-item {
     padding: 30px 52px 30px 30px;
-    margin-bottom: 15px;
     color: #1a0e4b;
     border-radius: 8px;
     -webkit-box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
@@ -316,7 +311,7 @@ main {
 
 .products-tab {
     position: absolute;
-    left: 40%;
+    left: 35%;
     right: 0;
     opacity: 0;
     visibility: hidden;
@@ -332,8 +327,6 @@ main {
 }
 
 .brand-product {
-    top: 240px;
-    left: 20%;
     background-color: #e5f0d2;
     padding: 5px 20px;
     border-radius: 12px;
@@ -1042,21 +1035,21 @@ h2 {
 }
 
 h3 {
-    font-size: calc(23px + 0 * ((100vw - 320px) / 850));
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
 }
 
 h4 {
-    font-size: 25px;
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
     font-weight: bold;
     color: #ffffff;
 }
 
 h5 {
-    font-size: 23px;
+    font-size: calc(16px + 7 * ((100vw - 320px) / 850));
 }
 
 h6 {
-    font-size: 20px;
+    font-size: calc(13px + 3 * ((100vw - 320px) / 850));
     font-weight: 800;
 }
 
