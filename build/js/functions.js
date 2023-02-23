@@ -5,7 +5,9 @@ $(document).ready(function () {
 });
 function initImgReplace() {
 	'use strict;';
-	$('.section.welcome, .footer').each(function () {
+	$(
+		'.section.welcome, .footer, .events-card .events-img, .blog-right .card .blog-img'
+	).each(function () {
 		let imgHolder = $(this),
 			img = imgHolder.find('img'),
 			imgSrc = img.attr('src');

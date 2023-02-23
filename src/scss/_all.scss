@@ -157,7 +157,7 @@ main {
     &-content {
         padding-bottom: 350px;
     }
-    &-holder {
+    &-hodler {
         position: relative;
         min-height: 710px;
         padding-bottom: 200px;
@@ -205,8 +205,8 @@ main {
 }
 .products-tab {
     position: absolute;
-    left: 35%;
-    right: 0;
+    left: 0;
+    top: 0;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -233,6 +233,10 @@ main {
     }
     &-img {
         width: 100%;
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
     }
 }
 .events-card-body {
@@ -290,8 +294,14 @@ main {
 .by {
     color: $color4;
 }
-.blog-right {
-    margin-left: 20px;
+.blog {
+    &-right {
+        margin-left: 20px; 
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+    }
 }
 // ====footer
 .footer__container {
