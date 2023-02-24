@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular&display=swap);
 body {
     font-size: calc(13px + 3 * ((100vw - 320px) / 850));
-    font-family: "Overpass";
+    font-family: "Overpass", sans-serif;
     font-weight: normal;
     color: #6e7891;
 }
@@ -157,6 +157,9 @@ main {
 
 .feature-cols {
     margin-left: -40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .feature-card {
@@ -193,7 +196,6 @@ main {
 }
 
 .members {
-    margin-top: 150px;
     padding-top: 50px;
     background-image: url("../img/members-bg.png");
     background-repeat-x: repeat;
@@ -207,6 +209,7 @@ main {
     position: relative;
     border-radius: 50%;
     border: 5px dashed #ffffff;
+    display: inline-block;
 }
 .members-work {
     padding: 15px 0 45px 0;
@@ -256,8 +259,16 @@ main {
     background-color: #29abe2;
 }
 
+.products {
+    background-image: url("../img/members-bg.png");
+    background-repeat-x: repeat;
+    background-size: 667px 100%;
+}
+.products__container {
+    padding-top: 110px;
+}
 .products-content {
-    padding-bottom: 350px;
+    padding-bottom: 170px;
 }
 .products-hodler {
     position: relative;
@@ -266,15 +277,24 @@ main {
 }
 .products-card {
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
             box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
     background-color: #ffffff;
 }
-.products-img {
-    padding-bottom: 60px;
-    border-bottom: 3px solid #e5f0d2;
-    margin-bottom: 35px;
+
+.card-img-top {
+    width: 150px;
 }
 
 .products-link:hover {
@@ -282,7 +302,7 @@ main {
 }
 
 .products-item {
-    padding: 30px 52px 30px 30px;
+    padding: 30px 0 30px 30px;
     color: #1a0e4b;
     border-radius: 8px;
     -webkit-box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
@@ -326,14 +346,21 @@ main {
     pointer-events: all;
 }
 
+.card-body {
+    padding: 0;
+}
+
 .brand-product {
     background-color: #e5f0d2;
-    padding: 5px 20px;
+    width: 200px;
     border-radius: 12px;
+    margin: 0;
 }
 
 .card-price {
     color: #ff3600;
+    margin: 0;
+    font-weight: bold;
 }
 
 .events {
@@ -349,15 +376,22 @@ main {
     width: 100%;
     height: 100%;
 }
-
 .events-card-body {
-    padding-left: 50px;
+    padding: 20px 0;
 }
 
 .data-text {
     font-size: 15px;
     color: #1a0e4b;
     font-weight: 700;
+}
+
+.data__img:not(:first-child) {
+    margin-left: 30px;
+}
+
+.icons-time {
+    margin-right: 10px;
 }
 
 .speaker-name {
@@ -402,6 +436,21 @@ main {
     color: #ffae00;
 }
 
+.club-right-title {
+    margin-top: 80px;
+}
+
+.club-right-text,
+.club-right-title {
+    text-align: start;
+}
+
+.blog {
+    background-image: url("../img/members-bg.png");
+    background-repeat-x: repeat;
+    background-size: 667px 100%;
+}
+
 .blog__container {
     padding-top: 120px;
 }
@@ -414,12 +463,16 @@ main {
     color: #598117;
 }
 
-.blog-right {
-    margin-left: 20px;
-}
-.blog-img {
+.blog-img, .blog-bigimg {
     width: 100%;
     height: 100%;
+}
+.blog-bigimg {
+    margin-bottom: 40px;
+}
+
+.card-body {
+    padding: 20px 30px;
 }
 
 .footer__container {
@@ -463,6 +516,42 @@ main {
     padding-top: 20px;
 }
 
+@media (max-width: 1200px) {
+    .club-right-title {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .clubs-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .events-img {
+        width: 185px;
+        height: 230px;
+    }
+    .blog-img {
+        width: 179px;
+        height: 160px;
+    }
+    .club-right-title,
+    .club-right-text {
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    .products-content {
+        padding-bottom: 760px;
+    }
+}
 /*NORMALIZE.CSS*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -1017,7 +1106,7 @@ ul {
 
 body {
     font-size: calc(13px + 3 * ((100vw - 320px) / 850));
-    font-family: "Overpass";
+    font-family: "Overpass", sans-serif;
     font-weight: normal;
     color: #6e7891;
 }

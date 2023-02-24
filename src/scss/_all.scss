@@ -74,6 +74,7 @@ main {
 }
 .feature-cols {
     margin-left: -40px;
+    justify-content: center;
 }
 .feature-card {
     width: 570px;
@@ -108,7 +109,6 @@ main {
     }
 // ====members
 .members {
-    margin-top: 150px;
     padding-top: 50px;
     background-image: url("../img/members-bg.png");
     background-repeat-x: repeat;
@@ -121,12 +121,14 @@ main {
         position: relative;
         border-radius: 50%;
         border: 5px dashed $color2;
+        display: inline-block;
     }
     &-work {
         padding: 15px 0 45px 0;
         color: $color2;
     }
 }
+
 .members-content {
     padding-top: 120px;
 }
@@ -154,8 +156,14 @@ main {
 }
 // ====products
 .products {
+    background-image: url("../img/members-bg.png");
+    background-repeat-x: repeat;
+    background-size: 667px 100%;
+    &__container {
+        padding-top: 110px;
+    }
     &-content {
-        padding-bottom: 350px;
+        padding-bottom: 170px;
     }
     &-hodler {
         position: relative;
@@ -164,15 +172,14 @@ main {
     }
     &-card {
         padding: 15px;
+        @include flex(null,column,null,center);
         border-radius: 4px;
         box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
         background-color: $color2;
     }
-    &-img {
-        padding-bottom: 60px;
-        border-bottom: 3px solid #e5f0d2;
-        margin-bottom: 35px;
-    }
+}
+.card-img-top {
+    width: 150px;
 }
 .products-link {
     &:hover {
@@ -180,7 +187,7 @@ main {
 }
 }
 .products-item {
-    padding: 30px 52px 30px 30px;
+    padding: 30px 0 30px 30px;
     &:last-child{
         margin-bottom: 0;
     }
@@ -217,13 +224,19 @@ main {
         pointer-events: all;
     }
 }
+.card-body {
+    padding: 0;
+}
 .brand-product {
     background-color: #e5f0d2;
-    padding: 5px 20px;
+    width: 200px;
     border-radius: 12px;
+    margin: 0;
 }
 .card-price {
     color: $color5;
+    margin: 0;
+    font-weight: bold;
 }
 // ====events
 .events {
@@ -238,14 +251,20 @@ main {
         width: 100%;
         height: 100%;
     }
-}
-.events-card-body {
-    padding-left: 50px;
+    &-card-body {
+        padding: 20px 0;
+    }
 }
 .data-text {
     font-size: #{$fs-sm+2};
     color: $color3;
     font-weight: 700;
+}
+.data__img:not(:first-child) {
+    margin-left: 30px;
+}
+.icons-time {
+    margin-right: 10px;
 }
 .speaker-name {
     margin-left: 25px;
@@ -278,13 +297,22 @@ main {
     line-height: 1.9;
     color: $color4;
 }
-.clubs-text {
-
-}
 .yellow-text {
     color: #ffae00;
 }
+.club-right-title {
+    margin-top: 80px;
+}
+.club-right-text,
+.club-right-title {
+    text-align: start;
+}
 // ====blog
+.blog {
+    background-image: url("../img/members-bg.png");
+    background-repeat-x: repeat;
+    background-size: 667px 100%;
+}
 .blog__container {
     padding-top: 120px;
 }
@@ -295,13 +323,19 @@ main {
     color: $color4;
 }
 .blog {
-    &-right {
-        margin-left: 20px; 
-    }
-    &-img {
+    &-img,
+    &-bigimg {
         width: 100%;
         height: 100%;
     }
+    &-bigimg {
+        margin-bottom: 40px;
+
+    }
+}
+
+.card-body {
+    padding: 20px 30px;
 }
 // ====footer
 .footer__container {
@@ -335,4 +369,33 @@ main {
     border-top: 1px solid $color8;
     margin: 80px 0 10px 0;
     padding-top: 20px;
+}
+@media (max-width: 1200px) {
+    .club-right-title {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clubs-content {
+        @include flex(null,column-reverse,null,center);
+    }
+    .events-img {
+        width: 185px;
+        height: 230px;
+    }
+    .blog-img  {
+        width: 179px;
+        height: 160px;
+    }
+    .club-right-title,
+    .club-right-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-content {
+        padding-bottom: 760px;
+    }
 }
