@@ -27,6 +27,9 @@ main {
 .header__container {
     padding: 20px 15px;
 }
+.transform .header__container {
+    padding: 0;
+}
 .logo:hover {
     opacity: .7;
 }
