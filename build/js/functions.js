@@ -6,7 +6,7 @@ $(document).ready(function () {
 function initImgReplace() {
 	'use strict;';
 	$(
-		'.section.welcome, .section.welcomeabout, .footer, .events-card .events-img, .blog-right .card .blog-img'
+		'.section.welcome, .section.welcomeinner, .section.welcomeblog,.section.welcomecontact,  .footer, .events-card .events-img, .blog-right .card .blog-img'
 	).each(function () {
 		let imgHolder = $(this),
 			img = imgHolder.find('img'),
@@ -25,7 +25,7 @@ function initImgReplace() {
 function initHeader() {
 	'use strict;';
 	var header = $('.header'),
-		welcomeSection = $('.section.welcome, .section.welcomeabout').innerHeight();
+		welcomeSection = $('.section.welcome, .section.welcomeabout, .section.welcomeblog').innerHeight();
 	$(window).scroll(function () {
 		var windowScroll = $(this).scrollTop();
 		if (windowScroll >= welcomeSection) {

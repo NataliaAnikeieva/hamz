@@ -95,7 +95,13 @@ main {
 }
 
 .inner .transform {
-    background-color: #7da46e;
+    background-color: #77ac1f;
+}
+
+.inner header,
+.blog header,
+.contact header {
+    background-color: #77ac1f;
 }
 
 .header__container {
@@ -122,7 +128,9 @@ main {
     font-weight: bold;
 }
 
-.inner .logo-text {
+.inner .logo-text,
+.blog .logo-text,
+.contact .logo-text {
     color: #ffffff;
 }
 
@@ -140,10 +148,14 @@ main {
     color: #598117;
 }
 
-.inner .nav-link {
+.inner .nav-link,
+.blog .nav-link,
+.contact .nav-link {
     color: #ffffff;
 }
-.inner .nav-link:hover {
+.inner .nav-link:hover,
+.blog .nav-link:hover,
+.contact .nav-link:hover {
     color: #598117;
 }
 
@@ -152,7 +164,9 @@ main {
 }
 
 .welcome,
-.welcomeabout {
+.welcomeinner,
+.welcomeblog,
+.welcomecontact {
     height: 100vh;
     min-height: 860px;
     display: -webkit-box;
@@ -163,15 +177,21 @@ main {
             align-items: center;
 }
 .welcome__container,
-.welcomeabout__container {
+.welcomeinner__container,
+.welcomeblog__container,
+.welcomecontact__container {
     width: 100%;
 }
 .welcome-img,
-.welcomeabout-img {
+.welcomeinner-img,
+.welcomeblog-img,
+.welcomecontact-img {
     width: 100%;
 }
 .welcome-text,
-.welcomeabout-text {
+.welcomeinner-text,
+.welcomeblog-text,
+.welcomecontact-text {
     color: #373e39;
     max-width: 500px;
     margin: 30px 0;
@@ -599,6 +619,189 @@ main {
     padding: 35px 70px;
 }
 
+.posts {
+    margin-bottom: 100px;
+}
+
+.blogcontent-title {
+    color: #1a0e4b;
+    margin-bottom: 40px;
+}
+
+.blogcontent-card {
+    border: none;
+}
+.blogcontent-card:last-child {
+    margin-bottom: 100px;
+}
+
+.blogcontent-item {
+    margin-bottom: 20px;
+}
+.blogcontent-item:last-child {
+    margin-bottom: 0;
+}
+.blogcontent-item::before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #6e7891;
+    margin-right: 20px;
+}
+
+.blogcontent-link {
+    color: #6e7891;
+}
+.blogcontent-link:hover {
+    text-decoration: underline;
+}
+
+.photo {
+    width: 300px;
+    height: 340px;
+    background-color: #f8f9f6;
+    margin: 60px 0;
+}
+
+.photo-text {
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 900;
+}
+
+.tags {
+    width: 300px;
+    -webkit-box-shadow: 0 3px 10px #6e7891;
+            box-shadow: 0 3px 10px #6e7891;
+    padding: 45px 20px;
+}
+
+.tegs-title {
+    color: #1a0e4b;
+    font-weight: 100;
+    margin-bottom: 45px;
+}
+
+.tags-link {
+    margin-left: 3px;
+    -webkit-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+    transition: color 0.5s ease 0s;
+}
+.tags-link:hover {
+    color: #ffae00;
+}
+
+.tags-slash:hover {
+    color: #6e7891;
+}
+
+.blogcontent-social {
+    color: #1a0e4b;
+    font-weight: 800;
+}
+
+.sociallink {
+    color: #6e7891;
+    font-weight: normal;
+    -webkit-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+    transition: color 0.5s ease 0s;
+}
+.sociallink:hover {
+    color: #ffae00;
+}
+
+.comments {
+    margin: 50px 0 25px 0;
+}
+
+.comments-img {
+    margin-top: 30px;
+}
+
+.comments-body {
+    padding: 30px 40px;
+}
+
+.comments-link {
+    color: #ffae00;
+}
+.comments-link:hover {
+    text-decoration: underline;
+}
+
+.touch__container {
+    padding-top: 120px;
+}
+
+.touch-aside {
+    padding: 40px 0 40px 40px;
+    background-color: #f8f9f6;
+}
+
+.touch-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-bottom: 20px;
+    background-color: #668b16;
+    -webkit-transition: background 0.5s ease 0s;
+    -o-transition: background 0.5s ease 0s;
+    transition: background 0.5s ease 0s;
+}
+.touch-icons:hover {
+    background-color: #ffae00;
+}
+
+.touch-text {
+    font-size: 16px;
+    font-weight: 900;
+    color: #1a0e4b;
+}
+
+.office,
+.mail {
+    margin-bottom: 45px;
+}
+
+.touch-title {
+    margin-bottom: 40px;
+}
+
+.touch-btn {
+    margin-top: 20px;
+}
+
+.touch-img {
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.dot {
+    position: absolute;
+    margin: -457px 676px;
+    color: #ffae00;
+    -webkit-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+    transition: color 0.5s ease 0s;
+}
+.dot:hover {
+    color: #29abe2;
+}
+
 @media (max-width: 1200px) {
     .club-right-title {
         margin-top: 50px;
@@ -607,6 +810,9 @@ main {
 @media (max-width: 990px) {
     .blog-left {
         margin-bottom: 40px;
+    }
+    .touch-content {
+        margin-top: 50px;
     }
 }
 @media (max-width: 768px) {
@@ -1189,6 +1395,10 @@ ul {
 
 .arrow {
     padding-left: 20px;
+}
+
+.form-btn {
+    margin-bottom: 150px;
 }
 
 body {

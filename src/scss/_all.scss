@@ -25,7 +25,12 @@ main {
     background-color: $bgc8;
 }
 .inner .transform{
-    background-color: #7da46e;
+    background-color: lighten($color4, 10%);
+}
+.inner header,
+.blog header,
+.contact header {
+    background-color: lighten($color4, 10%);
 }
 .header__container {
     padding: 20px 15px;
@@ -43,7 +48,9 @@ main {
     color: $color3;
     font-weight: bold;
 }
-.inner .logo-text {
+.inner .logo-text,
+.blog .logo-text,
+.contact .logo-text {
     color: $color2;
 }
 .logo:hover {
@@ -58,7 +65,9 @@ main {
         color: $color4;
     }
 }
-.inner .nav-link {
+.inner .nav-link,
+.blog .nav-link,
+.contact .nav-link {
     color: $color2;
     &:hover {
         color: $color4;
@@ -69,7 +78,9 @@ main {
 }
 // =====welcome
 .welcome,
-.welcomeabout {
+.welcomeinner,
+.welcomeblog,
+.welcomecontact {
     height: 100vh;
     min-height: 860px;
     display: flex;
@@ -431,6 +442,149 @@ main {
 .mision-card-body {
     padding: 35px 70px;
 }
+// =====blogcontent
+.posts {
+    margin-bottom: 100px;
+}
+.blogcontent-title {
+    color: $color3;
+    margin-bottom: 40px;    
+}
+.blogcontent-card {
+    border: none;
+    &:last-child {
+        margin-bottom: 100px;
+    }
+}
+.blogcontent-item {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 3px solid $color1;
+        margin-right: 20px;
+    }
+}
+.blogcontent-link {
+    color: $color1;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// photo
+.photo  {
+    width: 300px;
+    height: 340px;
+    background-color: $bgc1;
+    margin: 60px 0;
+}
+.photo-text {
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 900;
+}
+.tags {
+    width: 300px;
+    box-shadow: 0 3px 10px $color1;
+    padding: 45px 20px;
+}
+.tegs-title {
+    color: $color3;
+    font-weight: 100;
+    margin-bottom: 45px;
+}
+.tags-link {
+    margin-left: 3px;
+    @include transition(color);
+    &:hover {
+        color: $color6;
+    }
+}
+.tags-slash:hover {
+    color: $color1;
+}
+.blogcontent-social {
+    color: $color3;
+    font-weight: 800;
+}
+.sociallink  {
+    color: $color1;
+    font-weight: normal;
+    @include transition(color);
+    &:hover {
+        color: $color6;
+    }
+} 
+.comments {
+    margin: 50px 0 25px 0;
+}
+.comments-img {
+    margin-top: 30px;
+}
+.comments-body {
+    padding: 30px 40px;
+}
+.comments-link {
+    color: $color6;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// ====touch
+.touch__container {
+    padding-top: 120px;
+}
+.touch-aside {
+    padding: 40px 0 40px 40px;
+    background-color: $bgc1;
+}
+.touch-icons {
+    @include flex(null, null, center, center);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: $color2;
+    margin-bottom: 20px;
+    background-color: $bgc3;
+    @include transition(background);
+    &:hover {
+        background-color: $bgc9; 
+    }
+}
+.touch-text {
+    font-size: $fs-md;
+    font-weight: 900;
+    color: $color3;
+}
+.office,
+.mail {
+    margin-bottom: 45px;
+}
+.touch-title {
+    margin-bottom: 40px;
+}
+.touch-btn {
+    margin-top: 20px;
+}
+.touch-img {
+    position: relative;
+    margin-bottom: 130px;
+}
+.dot {
+    position: absolute;
+    margin: -457px 676px;
+    color: $bgc9;
+    @include transition(color);
+    &:hover {
+        color: $bgc4;
+    }
+}
 //=======media
 @media (max-width: 1200px) {
     .club-right-title {
@@ -440,6 +594,9 @@ main {
 @media (max-width: 990px)  {
     .blog-left {
         margin-bottom: 40px;
+    }
+    .touch-content {
+        margin-top: 50px;
     }
 }
 @media (max-width: 768px) {
