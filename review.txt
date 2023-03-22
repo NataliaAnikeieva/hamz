@@ -1,34 +1,44 @@
-markup 0) на хедер добавь транзишен (фон, паддинги)
+markup 0) на хедер добавь транзишен (фон, паддинги) +
 
-1. https://i.imgur.com/GAhR0xy.png - с выравниванием что то не то
-2. https://i.imgur.com/K2923Uy.png - табы не рабочие
+1.+ https://i.imgur.com/GAhR0xy.png - с выравниванием что то не то +
+2. https://i.imgur.com/K2923Uy.png - табы не рабочие 
+не поняла. Что занчит не рабочие? Ты же писал, что были просто спанами, не ссылками. Как они тожны работать?
 3. https://i.imgur.com/IEK4IFh.png - отступы между карточками
-4. https://i.imgur.com/h3wCZsQ.png - не по дизайну, не хватает линий по бокам
-5. https://i.imgur.com/Smy4eaf.png - уверена что так должно быть?
+если делаю отступы, то три карточки не помещаются
+4. +https://i.imgur.com/h3wCZsQ.png - не по дизайну, не хватает линий по бокам
+5. +https://i.imgur.com/Smy4eaf.png - уверена что так должно быть?
 6. https://i.imgur.com/NO6DiOy.png - отступы между карточками
+то же что и с первыми карточками
 7. https://i.imgur.com/55CifmO.png - отступы
-8. https://i.imgur.com/hL873lk.png - сделай ссылками
+добавила отрицательный марджин. Правильно?
+8. +https://i.imgur.com/hL873lk.png - сделай ссылками
 9. https://i.imgur.com/aZ3noJb.png - фон не по дизу, не хватает точек
-10. https://i.imgur.com/2ShxMHg.png - отступ не по дизу
+у меня он без точек 
+10. +https://i.imgur.com/2ShxMHg.png - отступ не по дизу
 11. там где фон с волнами сделай ему ширину на 100%, background-size: 100%
-12. https://i.imgur.com/QgOtDnz.png - отступ не по дизу
-13. https://i.imgur.com/MPa3Myk.png -добавь подчеркивание. ссылка только автор
-14. https://i.imgur.com/iPD6ZvQ.png - добавь подчеркивание
+12.+ https://i.imgur.com/QgOtDnz.png - отступ не по дизу
+13.+ https://i.imgur.com/MPa3Myk.png -добавь подчеркивание. ссылка только автор
+14. +https://i.imgur.com/iPD6ZvQ.png - добавь подчеркивание
 15. https://i.imgur.com/cUrZrXI.png - отступ
-16. https://i.imgur.com/84LHcR9.png - разный цвет, разделитель должен быть не в ссылке. делай лучше через список
-17. https://i.imgur.com/mpPGy7q.png - делай через список, разделитель не в ссылке
+16.+ https://i.imgur.com/84LHcR9.png - разный цвет, разделитель должен быть не в ссылке. делай лучше через список
+17. +https://i.imgur.com/mpPGy7q.png - делай через список, разделитель не в ссылке
 18. https://i.imgur.com/sL2WpL3.png - отступ
+
 19. https://i.imgur.com/8Frw7P6.png - добавь подчеркивание
-20. https://i.imgur.com/Ts3PNsG.png, https://i.imgur.com/QIKIlO7.png - что не так с хедером при открытии меню
-21. https://i.imgur.com/J5TzOVV.png - на главной странице на меню в мобиле добавь фон
+20.? https://i.imgur.com/Ts3PNsG.png, https://i.imgur.com/QIKIlO7.png - что не так с хедером при открытии меню
+перенесла меню впаво? Кнопку так оставить? Что-то еще?
+21. +https://i.imgur.com/J5TzOVV.png - на главной странице на меню в мобиле добавь фон
 22. https://i.imgur.com/iwXfIxa.png - боковые отступы добавь
-23. https://i.imgur.com/ZqQqVRG.png - выравнивание
+добавляется только справа
++23. https://i.imgur.com/ZqQqVRG.png - выравнивание
 24. https://i.imgur.com/iGZo6T7.png - боковые отступы и отступ от заголовков табов
-25. https://i.imgur.com/gDzssFj.png - выравнивай картинку по центру или на всю ширину
-26. https://i.imgur.com/dPb5GJo.png - отступ между автором и текстом уменьш
-27. https://i.imgur.com/wG34nCR.png - отступ и выравнивай по центру
+-
+25. +https://i.imgur.com/gDzssFj.png - выравнивай картинку по центру или на всю ширину
+26. +https://i.imgur.com/dPb5GJo.png - отступ между автором и текстом уменьш
+27. +https://i.imgur.com/wG34nCR.png - отступ и выравнивай по центру
 scss
 1. https://i.imgur.com/jLy1SU7.png - названия классов так не надо записывать, пиши или раздельно или через тире
-2. https://i.imgur.com/WhQzloV.png - лишний ноль, значиния одинаковые
-3. https://i.imgur.com/089y9EG.png - сделай эту запись на отдельный класс и просто добавляй его в хтмл, что бы не дублировать одну и туже запись
+не поняла
+2.+ https://i.imgur.com/WhQzloV.png - лишний ноль, значиния одинаковые
+3.+ https://i.imgur.com/089y9EG.png - сделай эту запись на отдельный класс и просто добавляй его в хтмл, что бы не дублировать одну и туже запись
 

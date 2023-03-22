@@ -24,16 +24,19 @@ main {
 .transform {
     background-color: $bgc8;
 }
-.inner .transform{
+header {
+    background-color: $bgc8;
+}
+.header__container {
+    padding: 20px 15px;
+}
+.inner .transform {
     background-color: lighten($color4, 10%);
 }
 .inner header,
 .blog header,
 .contact header {
     background-color: lighten($color4, 10%);
-}
-.header__container {
-    padding: 20px 15px;
 }
 .transform .header__container {
     padding: 0 15px;
@@ -177,7 +180,7 @@ main {
         display: inline-block;
     }
     &-work {
-        padding: 15px 0 45px 0;
+        padding: 15px 0 45px;
         color: $color2;
     }
 }
@@ -203,7 +206,7 @@ main {
     border-radius: 50px;
     background-color: $bgc3;
     @include flex(null, column, end, center);
-    margin: -125px 0 0 10px;
+    margin: -125px 0 0 15px;
     @include transition(background);
     &:hover {
         background-color: $bgc4;
@@ -226,7 +229,6 @@ main {
         padding-bottom: 200px;
     }
     &-card {
-        padding: 15px;
         @include flex(null,column,null,center);
         border-radius: 4px;
         box-shadow: 0 0 25px 0 rgba(34, 34, 34, 0.08);
@@ -234,7 +236,9 @@ main {
     }
 }
 .card-img-top {
-    width: 150px;
+    width: 230px;
+    border-bottom: 3px solid $bgc7;
+    padding: 20px 0 60px 0;
 }
 .products-link {
     &:hover {
@@ -280,13 +284,13 @@ main {
     }
 }
 .card-body {
-    padding: 0;
+    @include flex(null, column, null, center);
+    margin-top: -35px;
 }
 .brand-product {
     background-color: #e5f0d2;
-    width: 200px;
+    width: 170px;
     border-radius: 12px;
-    margin: 0;
 }
 .card-price {
     color: $color5;
@@ -297,11 +301,12 @@ main {
 .events {
     background-color: $bgc3;
     &__container {
-        padding-top: 90px;
+        padding: 90px 0;
     }
     &-img {
         width: 100%;
         height: 100%;
+        margin-left: -13px;
     }
     &-card-body {
         padding: 20px 0;
@@ -368,17 +373,24 @@ main {
 // ====blog
 .blog {
     background-image: url("../img/members-bg.png");
-    background-repeat-x: repeat;
     background-size: 667px 100%;
 }
+.bg-repeate {
+    background-repeat-x: repeat;
+}
 .blog__container {
-    padding-top: 120px;
+    padding: 120px 0;
 }
 .left-card-body {
     padding-left: 35px;
 }
 .by {
     color: $color4;
+}
+.link-by {
+    &:hover {
+    text-decoration: underline;
+    }
 }
 .blog {
     &-img {
@@ -390,8 +402,12 @@ main {
 
     }
 }
-.card-body {
-    padding: 20px 30px;
+.blog-cards {
+    padding: 20px;
+    margin-top: 0;
+}
+.blogcontent-bigimg {
+    margin: 45px 0 30px 0;
 }
 // ====footer
 .footer__container {
@@ -477,6 +493,9 @@ main {
         text-decoration: underline;
     }
 }
+.blogcontent-social {
+    display: flex;
+}
 // photo
 .photo  {
     width: 300px;
@@ -506,7 +525,7 @@ main {
         color: $color6;
     }
 }
-.tags-slash:hover {
+.tags-slash {
     color: $color1;
 }
 .blogcontent-social {
@@ -519,6 +538,7 @@ main {
     @include transition(color);
     &:hover {
         color: $color6;
+        text-decoration: underline;
     }
 } 
 .comments {
@@ -561,6 +581,9 @@ main {
     font-size: $fs-md;
     font-weight: 900;
     color: $color3;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .office,
 .mail {
@@ -609,14 +632,29 @@ main {
     .blog-img  {
         width: 179px;
         height: 160px;
+        margin: 0 auto;
     }
     .club-right-title,
     .club-right-text {
         text-align: center;
     }
+    .aside-content {
+     margin-bottom: 100px;
+     @include flex(null, column, center, center)
+    } 
 }
 @media (max-width: 576px) {
     .products-content {
         padding-bottom: 760px;
     }
+    .feature-card {
+        margin: 0 50px;
+    }
+    .products-card {
+        margin: 0 25px;
+    }
+.event__container {
+    padding: 200px 0;
+}
+
 }

@@ -57,6 +57,7 @@ p {
     color: #6e7891;
     line-height: 1.9;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 html, body {
@@ -94,6 +95,14 @@ main {
     background-color: #78E8DF;
 }
 
+header {
+    background-color: #78E8DF;
+}
+
+.header__container {
+    padding: 20px 15px;
+}
+
 .inner .transform {
     background-color: #77ac1f;
 }
@@ -102,10 +111,6 @@ main {
 .blog header,
 .contact header {
     background-color: #77ac1f;
-}
-
-.header__container {
-    padding: 20px 15px;
 }
 
 .transform .header__container {
@@ -291,7 +296,7 @@ main {
     display: inline-block;
 }
 .members-work {
-    padding: 15px 0 45px 0;
+    padding: 15px 0 45px;
     color: #ffffff;
 }
 
@@ -333,7 +338,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: -125px 0 0 10px;
+    margin: -125px 0 0 15px;
     -webkit-transition: background 0.5s ease 0s;
     -o-transition: background 0.5s ease 0s;
     transition: background 0.5s ease 0s;
@@ -359,7 +364,6 @@ main {
     padding-bottom: 200px;
 }
 .products-card {
-    padding: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,7 +381,9 @@ main {
 }
 
 .card-img-top {
-    width: 150px;
+    width: 230px;
+    border-bottom: 3px solid #e5f0d2;
+    padding: 20px 0 60px 0;
 }
 
 .products-link:hover {
@@ -430,14 +436,23 @@ main {
 }
 
 .card-body {
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -35px;
 }
 
 .brand-product {
     background-color: #e5f0d2;
-    width: 200px;
+    width: 170px;
     border-radius: 12px;
-    margin: 0;
 }
 
 .card-price {
@@ -450,11 +465,12 @@ main {
     background-color: #668b16;
 }
 .events__container {
-    padding-top: 90px;
+    padding: 90px 0;
 }
 .events-img {
     width: 100%;
     height: 100%;
+    margin-left: -13px;
 }
 .events-card-body {
     padding: 20px 0;
@@ -533,12 +549,15 @@ main {
 
 .blog {
     background-image: url("../img/members-bg.png");
-    background-repeat-x: repeat;
     background-size: 667px 100%;
 }
 
+.bg-repeate {
+    background-repeat-x: repeat;
+}
+
 .blog__container {
-    padding-top: 120px;
+    padding: 120px 0;
 }
 
 .left-card-body {
@@ -549,6 +568,10 @@ main {
     color: #598117;
 }
 
+.link-by:hover {
+    text-decoration: underline;
+}
+
 .blog-img {
     width: 100%;
     height: 100%;
@@ -557,8 +580,13 @@ main {
     margin-bottom: 40px;
 }
 
-.card-body {
-    padding: 20px 30px;
+.blog-cards {
+    padding: 20px;
+    margin-top: 0;
+}
+
+.blogcontent-bigimg {
+    margin: 45px 0 30px 0;
 }
 
 .footer__container {
@@ -658,6 +686,12 @@ main {
     text-decoration: underline;
 }
 
+.blogcontent-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .photo {
     width: 300px;
     height: 340px;
@@ -694,7 +728,7 @@ main {
     color: #ffae00;
 }
 
-.tags-slash:hover {
+.tags-slash {
     color: #6e7891;
 }
 
@@ -712,6 +746,7 @@ main {
 }
 .sociallink:hover {
     color: #ffae00;
+    text-decoration: underline;
 }
 
 .comments {
@@ -770,6 +805,9 @@ main {
     font-size: 16px;
     font-weight: 900;
     color: #1a0e4b;
+}
+.touch-text:hover {
+    text-decoration: underline;
 }
 
 .office,
@@ -834,15 +872,41 @@ main {
     .blog-img {
         width: 179px;
         height: 160px;
+        margin: 0 auto;
     }
     .club-right-title,
     .club-right-text {
         text-align: center;
     }
+    .aside-content {
+        margin-bottom: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
 }
 @media (max-width: 576px) {
     .products-content {
         padding-bottom: 760px;
+    }
+    .feature-card {
+        margin: 0 50px;
+    }
+    .products-card {
+        margin: 0 25px;
+    }
+    .event__container {
+        padding: 200px 0;
     }
 }
 /*NORMALIZE.CSS*/
@@ -1456,5 +1520,6 @@ p {
     color: #6e7891;
     line-height: 1.9;
     font-weight: normal;
+    margin-bottom: 0;
 }
 /*# sourceMappingURL=maps/main.css.map */
