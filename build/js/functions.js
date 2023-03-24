@@ -6,7 +6,7 @@ $(document).ready(function () {
 function initImgReplace() {
 	'use strict;';
 	$(
-		'.section.welcome, .section.welcomeinner, .section.welcomeblog,.section.welcomecontact,  .footer, .events-card .events-img, .blog-right .card .blog-img'
+		'.section.welcome, .section.welcome-inner, .section.welcome-blog,.section.welcome-contact,  .footer, .events-card .events-img, .blog-right .card .blog-img'
 	).each(function () {
 		let imgHolder = $(this),
 			img = imgHolder.find('img'),

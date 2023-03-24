@@ -82,7 +82,7 @@ header {
 // =====welcome
 .welcome,
 .welcome-inner,
-.welcom-blog,
+.welcome-blog,
 .welcome-contact {
     height: 100vh;
     min-height: 860px;
@@ -241,8 +241,7 @@ header {
     }
 }
 .card-img-top {
-    width: 230px;
-    border-bottom: 3px solid $bgc7;
+    width: 200px;
     padding: 20px 0 60px 0;
 }
 .products-link {
@@ -294,9 +293,29 @@ header {
 }
 .brand-product {
     background-color: #e5f0d2;
-    width: 170px;
+    padding: 3px 30px;
     border-radius: 12px;
     margin-bottom: 20px;
+    &::before {
+        content: "";
+        display: flex;
+        position: relative;
+        top: 40%;
+        height: 2px;
+        width: 30px;
+        background-color: #e5f0d2;
+        margin-left: -55px;
+    }
+    &::after {
+        content: "";
+        display: flex;
+        position: relative;
+        height: 2px;
+        width: 30px;
+        background-color: #e5f0d2;
+        top: -46%;
+        left: 120%;
+    }
 }
 .card-price {
     color: $color5;
@@ -392,7 +411,7 @@ header {
     background-repeat-x: repeat;
 }
 .blog__container {
-    padding: 120px 0;
+    padding: 120px 0 50px;
 }
 .left-card-body {
     padding-left: 35px;
@@ -414,6 +433,18 @@ header {
         margin-bottom: 40px;
 
     }
+}
+.blogcontent-bigtitle {
+    margin: 40px 0;
+}
+.img-links {
+    margin-bottom: 40px;
+}
+.final {
+    margin-top: 40px;
+}
+.final-title {
+    margin-bottom: 40px;
 }
 .blog-cards {
     padding: 20px;
@@ -529,7 +560,7 @@ header {
 .tegs-title {
     color: $color3;
     font-weight: 100;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 .tags-link {
     margin-left: 3px;
@@ -574,7 +605,7 @@ header {
     padding-top: 120px;
 }
 .touch-aside {
-    padding: 40px 0 40px 40px;
+    padding: 40px 0 70px 40px;
     background-color: $bgc1;
 }
 .touch-icons {
@@ -643,6 +674,9 @@ header {
 }
 }
 @media (max-width: 768px) {
+    .nav-link {
+        text-align: end;
+    }
     .clubs-content {
         @include flex(null,column-reverse,null,center);
     }
@@ -664,6 +698,7 @@ header {
     } 
     .products-content {
         flex-wrap: wrap;
+        padding-bottom: 330px;
     }
     .products-card {
         width: 40%;

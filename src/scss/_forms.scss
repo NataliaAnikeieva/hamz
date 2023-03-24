@@ -14,9 +14,21 @@
 .header-btn {
     margin-left: 40px;
 }
+.btn .btn-outline-success .header-btn {
+  order: 2;
+}
+.navbar-toggler .collapsed {
+  order: 3;
+  }
+.navbar-collapse .collapse {
+  order: 4;
+}
 .arrow {
   padding-left: 20px;
 }
 .form-btn {
   margin-bottom: 150px;
+}
+.mission-btn {
+  margin-top: 20px;
 }

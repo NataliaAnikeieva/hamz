@@ -170,7 +170,7 @@ header {
 
 .welcome,
 .welcome-inner,
-.welcom-blog,
+.welcome-blog,
 .welcome-contact {
     height: 100vh;
     min-height: 860px;
@@ -183,19 +183,19 @@ header {
 }
 .welcome__container,
 .welcome-inner__container,
-.welcom-blog__container,
+.welcome-blog__container,
 .welcome-contact__container {
     width: 100%;
 }
 .welcome-img,
 .welcome-inner-img,
-.welcom-blog-img,
+.welcome-blog-img,
 .welcome-contact-img {
     width: 100%;
 }
 .welcome-text,
 .welcome-inner-text,
-.welcom-blog-text,
+.welcome-blog-text,
 .welcome-contact-text {
     color: #373e39;
     max-width: 500px;
@@ -387,8 +387,7 @@ header {
 }
 
 .card-img-top {
-    width: 230px;
-    border-bottom: 3px solid #e5f0d2;
+    width: 200px;
     padding: 20px 0 60px 0;
 }
 
@@ -457,9 +456,33 @@ header {
 
 .brand-product {
     background-color: #e5f0d2;
-    width: 170px;
+    padding: 3px 30px;
     border-radius: 12px;
     margin-bottom: 20px;
+}
+.brand-product::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 40%;
+    height: 2px;
+    width: 30px;
+    background-color: #e5f0d2;
+    margin-left: -55px;
+}
+.brand-product::after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background-color: #e5f0d2;
+    top: -46%;
+    left: 120%;
 }
 
 .card-price {
@@ -571,7 +594,7 @@ header {
 }
 
 .blog__container {
-    padding: 120px 0;
+    padding: 120px 0 50px;
 }
 
 .left-card-body {
@@ -591,6 +614,22 @@ header {
     height: 100%;
 }
 .blog-bigimg {
+    margin-bottom: 40px;
+}
+
+.blogcontent-bigtitle {
+    margin: 40px 0;
+}
+
+.img-links {
+    margin-bottom: 40px;
+}
+
+.final {
+    margin-top: 40px;
+}
+
+.final-title {
     margin-bottom: 40px;
 }
 
@@ -729,7 +768,7 @@ header {
 .tegs-title {
     color: #1a0e4b;
     font-weight: 100;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .tags-link {
@@ -787,7 +826,7 @@ header {
 }
 
 .touch-aside {
-    padding: 40px 0 40px 40px;
+    padding: 40px 0 70px 40px;
     background-color: #f8f9f6;
 }
 
@@ -875,6 +914,9 @@ header {
     }
 }
 @media (max-width: 768px) {
+    .nav-link {
+        text-align: end;
+    }
     .clubs-content {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -918,6 +960,7 @@ header {
     .products-content {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+        padding-bottom: 330px;
     }
     .products-card {
         width: 40%;
@@ -1486,12 +1529,34 @@ ul {
     margin-left: 40px;
 }
 
+.btn .btn-outline-success .header-btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+}
+
+.navbar-toggler .collapsed {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+}
+
+.navbar-collapse .collapse {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+}
+
 .arrow {
     padding-left: 20px;
 }
 
 .form-btn {
     margin-bottom: 150px;
+}
+
+.mission-btn {
+    margin-top: 20px;
 }
 
 body {
